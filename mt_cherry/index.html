@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Autom8 Tr8n - MT2</title>
+<head>
+	<link rel="shortcut icon" href="/static/images/A_cap_logo_favicon.ico"/>
+   	<meta charset="utf-8"/>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Autom8 Themes -->
+	<link rel="stylesheet" id="basic_style-css" href="/static/css/style.css?ver=1.1" type="text/css" media="all">
+	<link rel="stylesheet" id="menu5.css-css" href="/static/css/menu5.css?ver=4.8.2" type="text/css" media="all">
+	<link rel="stylesheet" id="Font_Awesome-css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css?ver=4.8.2" type="text/css" media="all">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/static/js/utility.js?version=0.33"></script>
+	<script type="text/javascript" src="/static/js/translate.js?version=2.99"></script>
+
+</head>
+
+<body>
+ 
+<div class="outer">
+<div class="inner">
+
+<div class="header-top">
+      <div class="container">
+          <div class="row">
+                  <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 top-left">
+                          <ul>
+                              <li><i class="fa fa-phone" aria-hidden="true"></i><a href="http://mt.autom8tr8n.com">1-318-467-8383</a></li>
+                              <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="stevebpdx@gmail.com">stevebpdx@gmail.com</a></li>
+                          </ul>  
+                  </div>
+                 
+           </div>
+       </div>
+</div>
+<div class="lg">
+	<div class="container">
+     <div class="row">
+                  <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 top-left">
+    	<div class="logo">
+			<a href="http://mt.autom8tr8n.com">
+			<img src="/static/images/autom8_logo2_black.png" width="40%" 
+                 onmouseover="this.src='/static/images/autom8_logo2_red.png'" 
+                  onmouseout="this.src='/static/images/autom8_logo2_black.png'">
+			</a>
+		</div>
+		<!-- <div class="logo"><a href="http://mt.autom8tr8n.com"><img src="/static/images/autom8_logo.png"></a></div> -->
+        </div>
+        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 top-right">
+        
+                         <ul>
+                         <li><p>Find us on</p></li>
+                         	<li class="fb"><a href="https://www.facebook.com/GoVivace/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li class="google"><a href="https://www.linkedin.com/in/stevebraich" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="tweet"><a href="https://twitter.com/stevebpdx" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li class="tweet"><a href="https://plus.google.com/u/0/104256175453500893888" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                         </ul>
+                          
+                  </div>
+        </div>
+    </div>
+</div>
+
+
+<form name="myForm">
+
+<table class="mainTable" cellspacing="10">
+<!-- <tbody> -->
+
+<!-- First Row -->
+<tr>
+<!-- <td width="50%">&nbsp;</td> -->
+<td class="textColumn">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<!-- Second Row -->
+<tr>
+<td>
+<no-br>
+<select name="sourceLanguage" id="sourceLanguage" class="languageCombo" onchange="SourceLanguageOnChange();"></select>&nbsp;&nbsp;
+<input id="DetectButton" type="button" class="translateButton" onclick="Detect(false)" value="Detect" onchange="TargetLanguageOnChange();" />
+</no-br>
+</td>
+
+<td>&nbsp;</td>
+
+<td>
+<table class="buttonWrapper">
+<tr>
+<td>
+<select id="targetLanguage" name="targetLanguage" class="languageCombo" onchange="TargetLanguageOnChange();"></select>
+</td>
+
+<td class="translateButtonPosition">
+<input type="button" class="translateButton" onclick="Translate();" value="Translate"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<!-- Third Row -->
+<tr>
+<td class="height=100px">
+<textarea id="sourceText" name="sourceText" class="textArea" spellcheck="false"></textarea>
+</td>
+
+<td></td>
+
+<td>
+<textarea id="targetText" name="targetText" class="textArea targetText" readonly></textarea>
+</td>
+</tr>
+
+<tr>
+<td>
+<br/>
+<span id="performance"></span><br/>
+</td>
+</tr>
+
+<!-- </tbody> -->
+</table>
+
+</form>
+
+<footer class="text-center-xs space--xs bg--secondary">
+<div class="container">
+	<div class="row">
+		<div class="col-sm-7">
+			<ul class="list-inline">
+				<!--- menu code goes here --><li>
+					<a href="http://mt.autom8tr8n.com">
+						<span class="h6 type--uppercase">Home</span>
+					</a>
+				</li><li>
+					<a href="http://mt.autom8tr8n.com">
+						<span class="h6 type--uppercase">About</span>
+					</a>
+				</li><li>
+					<a href="http://mt.autom8tr8n.com">
+						<span class="h6 type--uppercase">Contact</span>
+					</a>
+				</li><li>
+					<a href="http://mt.autom8tr8n.com">
+						<span class="h6 type--uppercase">Privacy</span>
+					</a>
+				</li><!--- menu code ends here -->
+			</ul>
+		</div>
+		<div class="col-sm-5 text-right text-center-xs">
+			<ul class="social-list list-inline list--hover">
+				
+				<li>
+					<a href="https://twitter.com/stevebpdx" target="_blank">
+						<i class="fa fa-twitter icon icon--xs"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/GoVivace/" target="_blank">
+						<i class="fa fa-facebook icon icon--xs"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.linkedin.com/in/stevebraich" target="_blank">
+						<i class="fa fa-linkedin icon icon--xs"></i>
+					</a>
+				</li>
+			   <li>
+					<a href="https://plus.google.com/u/0/104256175453500893888" target="_blank">
+						<i class="fa fa-google-plus icon icon--xs"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--end of row-->
+	<div class="row">
+		<div class="col-sm-7">
+			<span class="type--fine-print">©
+				<span class="update-year"></span> Autom8 Tr8n, LLC. 2017-2018</span>
+		   
+		</div>
+		<div class="col-sm-5 text-right text-center-xs">
+			<a class="type--fine-print" href="mailto:stevebpdx@gmail.com">stevebpdx@gmail.com</a>
+		</div>
+	</div>
+	<!--end of row-->
+</div>
+<!--end of container-->
+</footer>
+
+</div>
+</div>
+
+</body>
+</html>

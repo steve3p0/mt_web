@@ -1,0 +1,13 @@
+[Unit]
+Description=Moses MT Web Service
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/OpenNMT-py
+ExecStart=/usr/bin/python3 server.py --ip 127.0.0.1 --port 5000 --config available_models/conf.json
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+
+

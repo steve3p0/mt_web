@@ -1,0 +1,13 @@
+[Unit]
+Description=Moses MT Web Service
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/home/ubuntu/mt_web/mt_cherry
+ExecStart=/usr/bin/python translate.py
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+
+

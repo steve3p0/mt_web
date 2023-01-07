@@ -1,0 +1,12 @@
+[Unit]
+Description=Moses MT Web Service (EN-HR)
+After=multi-user.target
+
+[Service]
+ExecStart=/home/ubuntu/mosesdecoder/bin/moses --server --server-port 3012 -f /home/ubuntu/mt_publish/model_enhr_ted/moses.ini --mark-unknown --unknown-word-prefix "__UNK__" --unknown-word-suffix "__UNK__"
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+
+

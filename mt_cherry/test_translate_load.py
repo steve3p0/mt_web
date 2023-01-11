@@ -17,10 +17,10 @@ num_users = 10
 num_calls = 1
 
 domain = "https://localhost"
-#domain = "https://mt-test.lovoco.co"
+#domain = "http://mt.roboticpolyglot.com"
 port = "3004"
 url = ""
-key = "4ac85ecd-dc6d-49ee-a768-602ae2192ec9"
+key = "YOUR_API_KEY"
 api = "/translate?"
 
 ##########

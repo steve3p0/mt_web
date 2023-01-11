@@ -2,9 +2,7 @@
 import urllib
 import demjson
 
-#API_KEY = "YOUR_API_KEY"
-#API_KEY = "AIzaSyAfX52oOVIBqLStxb8cCRNfR4Nqf3HXXlg"
-API_KEY = "AIzaSyDTGvzL1elk9oYNjyUCojIxQcdTMQ5rGD0"
+API_KEY = "YOUR_API_KEY"
 
 TRANSLATE_URL = "https://www.googleapis.com/language/translate/v2?key=" + API_KEY  # &q=hello%20world&source=en&target=de
 DETECT_URL = "https://www.googleapis.com/language/translate/v2/detect?key=" + API_KEY  # &q=google+translate+is+fast

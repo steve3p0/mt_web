@@ -12,7 +12,7 @@ logging.basicConfig(level=logging.DEBUG,
                     filename='test_translate.log',
                     filemode='w')
 
-KEY = "4ac85ecd-dc6d-49ee-a768-602ae2192ec9"
+KEY = !!!***[REDACTED]***!!!
 DB_STRING = "mt.sqlite"
 
 
